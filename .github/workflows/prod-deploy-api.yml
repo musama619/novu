@@ -77,31 +77,31 @@ jobs:
           docker push ghcr.io/$REGISTRY_OWNER/$DOCKER_NAME:$IMAGE_TAG
           echo "IMAGE=ghcr.io/$REGISTRY_OWNER/$DOCKER_NAME:$IMAGE_TAG" >> $GITHUB_OUTPUT
 
-  deploy_prod_api_eu:
-    needs: build_prod_image
-    uses: ./.github/workflows/reusable-app-service-deploy.yml
-    secrets: inherit
-    with:
-      environment: Production
-      service_name: api
-      terraform_workspace: novu-prod-eu
-      # This is a workaround to an issue with matrix outputs
-      docker_image: ghcr.io/musama619/novu/api-ee:${{ github.sha }}
+  # deploy_prod_api_eu:
+  #   needs: build_prod_image
+  #   uses: ./.github/workflows/reusable-app-service-deploy.yml
+  #   secrets: inherit
+  #   with:
+  #     environment: Production
+  #     service_name: api
+  #     terraform_workspace: novu-prod-eu
+  #     # This is a workaround to an issue with matrix outputs
+  #     docker_image: ghcr.io/musama619/novu/api-ee:${{ github.sha }}
 
-  deploy_prod_api_us:
-    needs:
-      - deploy_prod_api_eu
-      - build_prod_image
-    uses: ./.github/workflows/reusable-app-service-deploy.yml
-    secrets: inherit
-    with:
-      environment: Production
-      service_name: api
-      terraform_workspace: novu-prod
-      # This is a workaround to an issue with matrix outputs
-      docker_image: ghcr.io/musama619/novu/api-ee:${{ github.sha }}
-      deploy_sentry_release: true
-      sentry_project: api
+  # deploy_prod_api_us:
+  #   needs:
+  #     - deploy_prod_api_eu
+  #     - build_prod_image
+  #   uses: ./.github/workflows/reusable-app-service-deploy.yml
+  #   secrets: inherit
+  #   with:
+  #     environment: Production
+  #     service_name: api
+  #     terraform_workspace: novu-prod
+  #     # This is a workaround to an issue with matrix outputs
+  #     docker_image: ghcr.io/musama619/novu/api-ee:${{ github.sha }}
+  #     deploy_sentry_release: true
+  #     sentry_project: api
 
   # newrelic:
   #   runs-on: ubuntu-latest
