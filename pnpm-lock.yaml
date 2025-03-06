@@ -427,9 +427,6 @@ importers:
         specifier: ^8.3.2
         version: 8.3.2
     optionalDependencies:
-      '@novu/ee-auth':
-        specifier: ^0.24.0
-        version: link:../../enterprise/packages/auth
       '@novu/ee-billing':
         specifier: ^0.24.0
         version: link:../../enterprise/packages/billing
