@@ -35,6 +35,9 @@ jobs:
           node-version: 20.8.1
           cache: 'pnpm'
 
+      - name: Check Node.js version
+        run: node -v
+        
       - name: Install dependencies
         shell: bash
         run: pnpm install --frozen-lockfile
