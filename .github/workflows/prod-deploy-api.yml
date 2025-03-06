@@ -23,13 +23,8 @@ jobs:
       deployments: write
       id-token: write
     steps:
-      - uses: actions/checkout@v3
-        with:
-          submodules: ${{ contains (matrix.name,'-ee') }}
-          token: ${{ secrets.SUBMODULES_TOKEN }}
-      - uses: ./.github/actions/setup-project
-        with:
-          submodules: ${{ contains (matrix.name,'-ee') }}
+      - name: Git Checkout
+        uses: actions/checkout@v3
 
       - name: build api
         run: pnpm build:api --skip-nx-cache
