@@ -26,6 +26,16 @@ jobs:
       - name: Git Checkout
         uses: actions/checkout@v3
 
+      - uses: actions/setup-node@v3
+        name: ⚙️ Setup Node Version
+        with:
+          node-version: '20.8.1'
+          cache: 'pnpm'
+          
+      - name: 🛟 Install dependencies
+        shell: bash
+        run: pnpm install --frozen-lockfile
+
       - name: build api
         run: pnpm build:api --skip-nx-cache
 
