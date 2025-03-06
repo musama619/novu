@@ -1667,363 +1667,363 @@ importers:
         specifier: 4.9.5
         version: 4.9.5
 
-  enterprise/packages/auth:
-    dependencies:
-      '@nestjs/common':
-        specifier: 10.2.2
-        version: 10.2.2(class-transformer@0.5.1)(class-validator@0.14.0)(reflect-metadata@0.1.13)(rxjs@7.8.1)
-      '@nestjs/jwt':
-        specifier: 10.2.0
-        version: 10.2.0(@nestjs/common@10.2.2)
-      '@nestjs/passport':
-        specifier: 9.0.3
-        version: 9.0.3(@nestjs/common@10.2.2)(passport@0.6.0)
-      '@novu/application-generic':
-        specifier: ^0.24.0
-        version: link:../../../packages/application-generic
-      '@novu/dal':
-        specifier: ^0.24.0
-        version: link:../../../libs/dal
-      '@novu/shared':
-        specifier: ^0.24.0
-        version: link:../../../libs/shared
-      passport:
-        specifier: 0.6.0
-        version: 0.6.0
-      passport-google-oauth:
-        specifier: ^2.0.0
-        version: 2.0.0
-      passport-oauth2:
-        specifier: ^1.6.1
-        version: 1.7.0
-    devDependencies:
-      '@types/chai':
-        specifier: ^4.2.11
-        version: 4.3.4
-      '@types/mocha':
-        specifier: ^8.0.1
-        version: 8.2.3
-      '@types/node':
-        specifier: ^14.6.0
-        version: 14.18.42
-      '@types/sinon':
-        specifier: ^9.0.0
-        version: 9.0.11
-      chai:
-        specifier: ^4.2.0
-        version: 4.3.7
-      cross-env:
-        specifier: ^7.0.3
-        version: 7.0.3
-      mocha:
-        specifier: ^8.1.1
-        version: 8.4.0
-      nodemon:
-        specifier: ^2.0.3
-        version: 2.0.22
-      sinon:
-        specifier: ^9.2.4
-        version: 9.2.4
-      ts-node:
-        specifier: ~10.9.1
-        version: 10.9.1(@types/node@14.18.42)(typescript@4.9.5)
-      typescript:
-        specifier: 4.9.5
-        version: 4.9.5
+  # enterprise/packages/auth:
+  #   dependencies:
+  #     '@nestjs/common':
+  #       specifier: 10.2.2
+  #       version: 10.2.2(class-transformer@0.5.1)(class-validator@0.14.0)(reflect-metadata@0.1.13)(rxjs@7.8.1)
+  #     '@nestjs/jwt':
+  #       specifier: 10.2.0
+  #       version: 10.2.0(@nestjs/common@10.2.2)
+  #     '@nestjs/passport':
+  #       specifier: 9.0.3
+  #       version: 9.0.3(@nestjs/common@10.2.2)(passport@0.6.0)
+  #     '@novu/application-generic':
+  #       specifier: ^0.24.0
+  #       version: link:../../../packages/application-generic
+  #     '@novu/dal':
+  #       specifier: ^0.24.0
+  #       version: link:../../../libs/dal
+  #     '@novu/shared':
+  #       specifier: ^0.24.0
+  #       version: link:../../../libs/shared
+  #     passport:
+  #       specifier: 0.6.0
+  #       version: 0.6.0
+  #     passport-google-oauth:
+  #       specifier: ^2.0.0
+  #       version: 2.0.0
+  #     passport-oauth2:
+  #       specifier: ^1.6.1
+  #       version: 1.7.0
+  #   devDependencies:
+  #     '@types/chai':
+  #       specifier: ^4.2.11
+  #       version: 4.3.4
+  #     '@types/mocha':
+  #       specifier: ^8.0.1
+  #       version: 8.2.3
+  #     '@types/node':
+  #       specifier: ^14.6.0
+  #       version: 14.18.42
+  #     '@types/sinon':
+  #       specifier: ^9.0.0
+  #       version: 9.0.11
+  #     chai:
+  #       specifier: ^4.2.0
+  #       version: 4.3.7
+  #     cross-env:
+  #       specifier: ^7.0.3
+  #       version: 7.0.3
+  #     mocha:
+  #       specifier: ^8.1.1
+  #       version: 8.4.0
+  #     nodemon:
+  #       specifier: ^2.0.3
+  #       version: 2.0.22
+  #     sinon:
+  #       specifier: ^9.2.4
+  #       version: 9.2.4
+  #     ts-node:
+  #       specifier: ~10.9.1
+  #       version: 10.9.1(@types/node@14.18.42)(typescript@4.9.5)
+  #     typescript:
+  #       specifier: 4.9.5
+  #       version: 4.9.5
 
-  enterprise/packages/billing:
-    dependencies:
-      '@nestjs/common':
-        specifier: 10.2.2
-        version: 10.2.2(class-transformer@0.5.1)(class-validator@0.14.0)(reflect-metadata@0.1.13)(rxjs@7.8.1)
-      '@nestjs/jwt':
-        specifier: 10.2.0
-        version: 10.2.0(@nestjs/common@10.2.2)
-      '@nestjs/platform-express':
-        specifier: ^10.2.2
-        version: 10.2.2(@nestjs/common@10.2.2)(@nestjs/core@10.2.2)
-      '@nestjs/swagger':
-        specifier: ^7.1.8
-        version: 7.1.9(@nestjs/common@10.2.2)(@nestjs/core@10.2.2)(class-transformer@0.5.1)(class-validator@0.14.0)(reflect-metadata@0.1.13)
-      '@nestjs/throttler':
-        specifier: ^5.0.1
-        version: 5.1.1(@nestjs/common@10.2.2)(@nestjs/core@10.2.2)(reflect-metadata@0.1.13)
-      '@novu/application-generic':
-        specifier: ^0.24.0
-        version: link:../../../packages/application-generic
-      '@novu/dal':
-        specifier: workspace:latest
-        version: link:../../../libs/dal
-      '@novu/ee-dal':
-        specifier: ^0.24.0
-        version: link:../libs/dal
-      '@novu/shared':
-        specifier: ^0.24.0
-        version: link:../../../libs/shared
-      class-transformer:
-        specifier: ^0.5.1
-        version: 0.5.1
-      class-validator:
-        specifier: ^0.14.0
-        version: 0.14.0
-      date-fns:
-        specifier: ^2.29.2
-        version: 2.29.3
-      shortid:
-        specifier: ^2.2.16
-        version: 2.2.16
-      slugify:
-        specifier: ^1.4.6
-        version: 1.6.6
-      stripe:
-        specifier: ^11.18.0
-        version: 11.18.0
-      stripe-event-types:
-        specifier: ^3.1.0
-        version: 3.1.0(stripe@11.18.0)
-    devDependencies:
-      '@types/chai':
-        specifier: ^4.2.11
-        version: 4.3.4
-      '@types/mocha':
-        specifier: ^8.0.1
-        version: 8.2.3
-      '@types/node':
-        specifier: ^14.6.0
-        version: 14.18.42
-      '@types/sinon':
-        specifier: ^9.0.0
-        version: 9.0.11
-      chai:
-        specifier: ^4.2.0
-        version: 4.4.1
-      cross-env:
-        specifier: ^7.0.3
-        version: 7.0.3
-      mocha:
-        specifier: ^8.1.1
-        version: 8.4.0
-      nodemon:
-        specifier: ^2.0.3
-        version: 2.0.22
-      sinon:
-        specifier: ^9.2.4
-        version: 9.2.4
-      ts-node:
-        specifier: ~10.9.1
-        version: 10.9.1(@types/node@14.18.42)(typescript@4.9.5)
-      typescript:
-        specifier: 4.9.5
-        version: 4.9.5
+  # enterprise/packages/billing:
+  #   dependencies:
+  #     '@nestjs/common':
+  #       specifier: 10.2.2
+  #       version: 10.2.2(class-transformer@0.5.1)(class-validator@0.14.0)(reflect-metadata@0.1.13)(rxjs@7.8.1)
+  #     '@nestjs/jwt':
+  #       specifier: 10.2.0
+  #       version: 10.2.0(@nestjs/common@10.2.2)
+  #     '@nestjs/platform-express':
+  #       specifier: ^10.2.2
+  #       version: 10.2.2(@nestjs/common@10.2.2)(@nestjs/core@10.2.2)
+  #     '@nestjs/swagger':
+  #       specifier: ^7.1.8
+  #       version: 7.1.9(@nestjs/common@10.2.2)(@nestjs/core@10.2.2)(class-transformer@0.5.1)(class-validator@0.14.0)(reflect-metadata@0.1.13)
+  #     '@nestjs/throttler':
+  #       specifier: ^5.0.1
+  #       version: 5.1.1(@nestjs/common@10.2.2)(@nestjs/core@10.2.2)(reflect-metadata@0.1.13)
+  #     '@novu/application-generic':
+  #       specifier: ^0.24.0
+  #       version: link:../../../packages/application-generic
+  #     '@novu/dal':
+  #       specifier: workspace:latest
+  #       version: link:../../../libs/dal
+  #     '@novu/ee-dal':
+  #       specifier: ^0.24.0
+  #       version: link:../libs/dal
+  #     '@novu/shared':
+  #       specifier: ^0.24.0
+  #       version: link:../../../libs/shared
+  #     class-transformer:
+  #       specifier: ^0.5.1
+  #       version: 0.5.1
+  #     class-validator:
+  #       specifier: ^0.14.0
+  #       version: 0.14.0
+  #     date-fns:
+  #       specifier: ^2.29.2
+  #       version: 2.29.3
+  #     shortid:
+  #       specifier: ^2.2.16
+  #       version: 2.2.16
+  #     slugify:
+  #       specifier: ^1.4.6
+  #       version: 1.6.6
+  #     stripe:
+  #       specifier: ^11.18.0
+  #       version: 11.18.0
+  #     stripe-event-types:
+  #       specifier: ^3.1.0
+  #       version: 3.1.0(stripe@11.18.0)
+  #   devDependencies:
+  #     '@types/chai':
+  #       specifier: ^4.2.11
+  #       version: 4.3.4
+  #     '@types/mocha':
+  #       specifier: ^8.0.1
+  #       version: 8.2.3
+  #     '@types/node':
+  #       specifier: ^14.6.0
+  #       version: 14.18.42
+  #     '@types/sinon':
+  #       specifier: ^9.0.0
+  #       version: 9.0.11
+  #     chai:
+  #       specifier: ^4.2.0
+  #       version: 4.4.1
+  #     cross-env:
+  #       specifier: ^7.0.3
+  #       version: 7.0.3
+  #     mocha:
+  #       specifier: ^8.1.1
+  #       version: 8.4.0
+  #     nodemon:
+  #       specifier: ^2.0.3
+  #       version: 2.0.22
+  #     sinon:
+  #       specifier: ^9.2.4
+  #       version: 9.2.4
+  #     ts-node:
+  #       specifier: ~10.9.1
+  #       version: 10.9.1(@types/node@14.18.42)(typescript@4.9.5)
+  #     typescript:
+  #       specifier: 4.9.5
+  #       version: 4.9.5
 
-  enterprise/packages/billing-web:
-    dependencies:
-      '@emotion/css':
-        specifier: ^11.10.5
-        version: 11.10.6
-      '@emotion/react':
-        specifier: ^11.7.1
-        version: 11.10.6(@types/react@17.0.62)(react@17.0.2)
-      '@emotion/styled':
-        specifier: ^11.6.0
-        version: 11.10.6(@emotion/react@11.10.6)(@types/react@17.0.62)(react@17.0.2)
-      '@mantine/core':
-        specifier: ^5.7.1
-        version: 5.10.5(@emotion/react@11.10.6)(@mantine/hooks@5.10.5)(@types/react@17.0.62)(react-dom@17.0.2)(react@17.0.2)
-      '@mantine/hooks':
-        specifier: ^5.7.1
-        version: 5.10.5(react@17.0.2)
-      '@novu/client':
-        specifier: ^0.24.0
-        version: link:../../../packages/client
-      '@novu/design-system':
-        specifier: ^0.24.0
-        version: link:../../../libs/design-system
-      '@novu/shared':
-        specifier: ^0.24.0
-        version: link:../../../libs/shared
-      '@novu/shared-web':
-        specifier: ^0.24.0
-        version: link:../../../libs/shared-web
-      '@stripe/react-stripe-js':
-        specifier: ^2.5.0
-        version: 2.5.0(@stripe/stripe-js@2.4.0)(react-dom@17.0.2)(react@17.0.2)
-      '@stripe/stripe-js':
-        specifier: ^2.4.0
-        version: 2.4.0
-      '@tanstack/react-query':
-        specifier: ^4.20.4
-        version: 4.29.1(react-dom@17.0.2)(react@17.0.2)
-      axios:
-        specifier: ^1.4.0
-        version: 1.6.2
-      date-fns:
-        specifier: ^2.29.2
-        version: 2.29.3
-      eslint:
-        specifier: ^8.33.0
-        version: 8.51.0
-      eslint-plugin-react-hooks:
-        specifier: ^4.4.0
-        version: 4.6.0(eslint@8.51.0)
-      react-hook-form:
-        specifier: 7.43.9
-        version: 7.43.9(react@17.0.2)
-      react-router-dom:
-        specifier: 6.2.2
-        version: 6.2.2(react-dom@17.0.2)(react@17.0.2)
-      tslib:
-        specifier: ^2.3.1
-        version: 2.6.2
-    devDependencies:
-      '@types/node':
-        specifier: ^18.11.12
-        version: 18.18.5
-      '@types/react':
-        specifier: ^17.0.0
-        version: 17.0.62
-      '@types/react-dom':
-        specifier: ^17.0.0
-        version: 17.0.20
-      react:
-        specifier: ^17.0.1
-        version: 17.0.2
-      react-dom:
-        specifier: ^17.0.1
-        version: 17.0.2(react@17.0.2)
-      rimraf:
-        specifier: ^3.0.2
-        version: 3.0.2
-      ts-loader:
-        specifier: ~9.4.0
-        version: 9.4.2(typescript@4.9.5)(webpack@5.78.0)
-      typescript:
-        specifier: 4.9.5
-        version: 4.9.5
+  # enterprise/packages/billing-web:
+  #   dependencies:
+  #     '@emotion/css':
+  #       specifier: ^11.10.5
+  #       version: 11.10.6
+  #     '@emotion/react':
+  #       specifier: ^11.7.1
+  #       version: 11.10.6(@types/react@17.0.62)(react@17.0.2)
+  #     '@emotion/styled':
+  #       specifier: ^11.6.0
+  #       version: 11.10.6(@emotion/react@11.10.6)(@types/react@17.0.62)(react@17.0.2)
+  #     '@mantine/core':
+  #       specifier: ^5.7.1
+  #       version: 5.10.5(@emotion/react@11.10.6)(@mantine/hooks@5.10.5)(@types/react@17.0.62)(react-dom@17.0.2)(react@17.0.2)
+  #     '@mantine/hooks':
+  #       specifier: ^5.7.1
+  #       version: 5.10.5(react@17.0.2)
+  #     '@novu/client':
+  #       specifier: ^0.24.0
+  #       version: link:../../../packages/client
+  #     '@novu/design-system':
+  #       specifier: ^0.24.0
+  #       version: link:../../../libs/design-system
+  #     '@novu/shared':
+  #       specifier: ^0.24.0
+  #       version: link:../../../libs/shared
+  #     '@novu/shared-web':
+  #       specifier: ^0.24.0
+  #       version: link:../../../libs/shared-web
+  #     '@stripe/react-stripe-js':
+  #       specifier: ^2.5.0
+  #       version: 2.5.0(@stripe/stripe-js@2.4.0)(react-dom@17.0.2)(react@17.0.2)
+  #     '@stripe/stripe-js':
+  #       specifier: ^2.4.0
+  #       version: 2.4.0
+  #     '@tanstack/react-query':
+  #       specifier: ^4.20.4
+  #       version: 4.29.1(react-dom@17.0.2)(react@17.0.2)
+  #     axios:
+  #       specifier: ^1.4.0
+  #       version: 1.6.2
+  #     date-fns:
+  #       specifier: ^2.29.2
+  #       version: 2.29.3
+  #     eslint:
+  #       specifier: ^8.33.0
+  #       version: 8.51.0
+  #     eslint-plugin-react-hooks:
+  #       specifier: ^4.4.0
+  #       version: 4.6.0(eslint@8.51.0)
+  #     react-hook-form:
+  #       specifier: 7.43.9
+  #       version: 7.43.9(react@17.0.2)
+  #     react-router-dom:
+  #       specifier: 6.2.2
+  #       version: 6.2.2(react-dom@17.0.2)(react@17.0.2)
+  #     tslib:
+  #       specifier: ^2.3.1
+  #       version: 2.6.2
+  #   devDependencies:
+  #     '@types/node':
+  #       specifier: ^18.11.12
+  #       version: 18.18.5
+  #     '@types/react':
+  #       specifier: ^17.0.0
+  #       version: 17.0.62
+  #     '@types/react-dom':
+  #       specifier: ^17.0.0
+  #       version: 17.0.20
+  #     react:
+  #       specifier: ^17.0.1
+  #       version: 17.0.2
+  #     react-dom:
+  #       specifier: ^17.0.1
+  #       version: 17.0.2(react@17.0.2)
+  #     rimraf:
+  #       specifier: ^3.0.2
+  #       version: 3.0.2
+  #     ts-loader:
+  #       specifier: ~9.4.0
+  #       version: 9.4.2(typescript@4.9.5)(webpack@5.78.0)
+  #     typescript:
+  #       specifier: 4.9.5
+  #       version: 4.9.5
 
-  enterprise/packages/libs/dal:
-    dependencies:
-      '@nestjs/common':
-        specifier: 10.2.2
-        version: 10.2.2(class-transformer@0.5.1)(class-validator@0.14.0)(reflect-metadata@0.1.13)(rxjs@7.8.1)
-      '@novu/dal':
-        specifier: ^0.24.0
-        version: link:../../../../libs/dal
-      '@novu/shared':
-        specifier: ^0.24.0
-        version: link:../../../../libs/shared
-      mongoose:
-        specifier: ^7.5.0
-        version: 7.5.2
-      mongoose-delete:
-        specifier: ^1.0.1
-        version: 1.0.1(mongoose@7.5.2)
-      rimraf:
-        specifier: ^3.0.2
-        version: 3.0.2
-    devDependencies:
-      '@types/node':
-        specifier: ^14.6.0
-        version: 14.18.42
-      '@typescript-eslint/parser':
-        specifier: ^4.14.2
-        version: 4.33.0(eslint@7.32.0)(typescript@4.9.5)
-      eslint-plugin-prettier:
-        specifier: ^4.2.1
-        version: 4.2.1(eslint-config-prettier@8.8.0)(eslint@7.32.0)(prettier@2.8.7)
-      ts-node:
-        specifier: ~10.9.1
-        version: 10.9.1(@types/node@14.18.42)(typescript@4.9.5)
-      tsconfig-paths:
-        specifier: ~4.1.0
-        version: 4.1.2
-      typescript:
-        specifier: 4.9.5
-        version: 4.9.5
+  # enterprise/packages/libs/dal:
+  #   dependencies:
+  #     '@nestjs/common':
+  #       specifier: 10.2.2
+  #       version: 10.2.2(class-transformer@0.5.1)(class-validator@0.14.0)(reflect-metadata@0.1.13)(rxjs@7.8.1)
+  #     '@novu/dal':
+  #       specifier: ^0.24.0
+  #       version: link:../../../../libs/dal
+  #     '@novu/shared':
+  #       specifier: ^0.24.0
+  #       version: link:../../../../libs/shared
+  #     mongoose:
+  #       specifier: ^7.5.0
+  #       version: 7.5.2
+  #     mongoose-delete:
+  #       specifier: ^1.0.1
+  #       version: 1.0.1(mongoose@7.5.2)
+  #     rimraf:
+  #       specifier: ^3.0.2
+  #       version: 3.0.2
+  #   devDependencies:
+  #     '@types/node':
+  #       specifier: ^14.6.0
+  #       version: 14.18.42
+  #     '@typescript-eslint/parser':
+  #       specifier: ^4.14.2
+  #       version: 4.33.0(eslint@7.32.0)(typescript@4.9.5)
+  #     eslint-plugin-prettier:
+  #       specifier: ^4.2.1
+  #       version: 4.2.1(eslint-config-prettier@8.8.0)(eslint@7.32.0)(prettier@2.8.7)
+  #     ts-node:
+  #       specifier: ~10.9.1
+  #       version: 10.9.1(@types/node@14.18.42)(typescript@4.9.5)
+  #     tsconfig-paths:
+  #       specifier: ~4.1.0
+  #       version: 4.1.2
+  #     typescript:
+  #       specifier: 4.9.5
+  #       version: 4.9.5
 
-  enterprise/packages/translation:
-    dependencies:
-      '@handlebars/parser':
-        specifier: ^2.1.0
-        version: 2.1.0
-      '@nestjs/common':
-        specifier: 10.2.2
-        version: 10.2.2(class-transformer@0.5.1)(class-validator@0.14.0)(reflect-metadata@0.1.13)(rxjs@7.8.1)
-      '@nestjs/jwt':
-        specifier: 10.2.0
-        version: 10.2.0(@nestjs/common@10.2.2)
-      '@nestjs/platform-express':
-        specifier: ^10.2.2
-        version: 10.2.2(@nestjs/common@10.2.2)(@nestjs/core@10.2.2)
-      '@nestjs/swagger':
-        specifier: ^7.1.8
-        version: 7.1.9(@nestjs/common@10.2.2)(@nestjs/core@10.2.2)(class-transformer@0.5.1)(class-validator@0.14.0)(reflect-metadata@0.1.13)
-      '@novu/application-generic':
-        specifier: ^0.24.0
-        version: link:../../../packages/application-generic
-      '@novu/dal':
-        specifier: workspace:latest
-        version: link:../../../libs/dal
-      '@novu/ee-dal':
-        specifier: ^0.24.0
-        version: link:../libs/dal
-      '@novu/shared':
-        specifier: ^0.24.0
-        version: link:../../../libs/shared
-      class-transformer:
-        specifier: ^0.5.1
-        version: 0.5.1
-      class-validator:
-        specifier: ^0.14.0
-        version: 0.14.0
-      multer:
-        specifier: ^1.4.5-lts.1
-        version: 1.4.5-lts.1
-      shortid:
-        specifier: ^2.2.16
-        version: 2.2.16
-      slugify:
-        specifier: ^1.4.6
-        version: 1.6.6
-    devDependencies:
-      '@types/chai':
-        specifier: ^4.2.11
-        version: 4.3.4
-      '@types/mocha':
-        specifier: ^8.0.1
-        version: 8.2.3
-      '@types/multer':
-        specifier: ^1.4.10
-        version: 1.4.11
-      '@types/node':
-        specifier: ^14.6.0
-        version: 14.18.42
-      '@types/sinon':
-        specifier: ^9.0.0
-        version: 9.0.11
-      chai:
-        specifier: ^4.2.0
-        version: 4.3.7
-      cross-env:
-        specifier: ^7.0.3
-        version: 7.0.3
-      mocha:
-        specifier: ^8.1.1
-        version: 8.4.0
-      nodemon:
-        specifier: ^2.0.3
-        version: 2.0.22
-      sinon:
-        specifier: ^9.2.4
-        version: 9.2.4
-      ts-node:
-        specifier: ~10.9.1
-        version: 10.9.1(@types/node@14.18.42)(typescript@4.9.5)
-      typescript:
-        specifier: 4.9.5
-        version: 4.9.5
+  # enterprise/packages/translation:
+  #   dependencies:
+  #     '@handlebars/parser':
+  #       specifier: ^2.1.0
+  #       version: 2.1.0
+  #     '@nestjs/common':
+  #       specifier: 10.2.2
+  #       version: 10.2.2(class-transformer@0.5.1)(class-validator@0.14.0)(reflect-metadata@0.1.13)(rxjs@7.8.1)
+  #     '@nestjs/jwt':
+  #       specifier: 10.2.0
+  #       version: 10.2.0(@nestjs/common@10.2.2)
+  #     '@nestjs/platform-express':
+  #       specifier: ^10.2.2
+  #       version: 10.2.2(@nestjs/common@10.2.2)(@nestjs/core@10.2.2)
+  #     '@nestjs/swagger':
+  #       specifier: ^7.1.8
+  #       version: 7.1.9(@nestjs/common@10.2.2)(@nestjs/core@10.2.2)(class-transformer@0.5.1)(class-validator@0.14.0)(reflect-metadata@0.1.13)
+  #     '@novu/application-generic':
+  #       specifier: ^0.24.0
+  #       version: link:../../../packages/application-generic
+  #     '@novu/dal':
+  #       specifier: workspace:latest
+  #       version: link:../../../libs/dal
+  #     '@novu/ee-dal':
+  #       specifier: ^0.24.0
+  #       version: link:../libs/dal
+  #     '@novu/shared':
+  #       specifier: ^0.24.0
+  #       version: link:../../../libs/shared
+  #     class-transformer:
+  #       specifier: ^0.5.1
+  #       version: 0.5.1
+  #     class-validator:
+  #       specifier: ^0.14.0
+  #       version: 0.14.0
+  #     multer:
+  #       specifier: ^1.4.5-lts.1
+  #       version: 1.4.5-lts.1
+  #     shortid:
+  #       specifier: ^2.2.16
+  #       version: 2.2.16
+  #     slugify:
+  #       specifier: ^1.4.6
+  #       version: 1.6.6
+  #   devDependencies:
+  #     '@types/chai':
+  #       specifier: ^4.2.11
+  #       version: 4.3.4
+  #     '@types/mocha':
+  #       specifier: ^8.0.1
+  #       version: 8.2.3
+  #     '@types/multer':
+  #       specifier: ^1.4.10
+  #       version: 1.4.11
+  #     '@types/node':
+  #       specifier: ^14.6.0
+  #       version: 14.18.42
+  #     '@types/sinon':
+  #       specifier: ^9.0.0
+  #       version: 9.0.11
+  #     chai:
+  #       specifier: ^4.2.0
+  #       version: 4.3.7
+  #     cross-env:
+  #       specifier: ^7.0.3
+  #       version: 7.0.3
+  #     mocha:
+  #       specifier: ^8.1.1
+  #       version: 8.4.0
+  #     nodemon:
+  #       specifier: ^2.0.3
+  #       version: 2.0.22
+  #     sinon:
+  #       specifier: ^9.2.4
+  #       version: 9.2.4
+  #     ts-node:
+  #       specifier: ~10.9.1
+  #       version: 10.9.1(@types/node@14.18.42)(typescript@4.9.5)
+  #     typescript:
+  #       specifier: 4.9.5
+  #       version: 4.9.5
 
-  enterprise/packages/translation-web:
+  # enterprise/packages/translation-web:
     dependencies:
       '@emotion/css':
         specifier: ^11.10.5
