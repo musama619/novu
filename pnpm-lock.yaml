@@ -1756,7 +1756,7 @@ importers:
         version: link:../../../libs/dal
       '@novu/ee-dal':
         specifier: ^0.24.0
-        version: link:../libs/dal
+        version: link:../../enterprise/packages/libs/dal
       '@novu/shared':
         specifier: ^0.24.0
         version: link:../../../libs/shared
@@ -1966,7 +1966,7 @@ importers:
         version: link:../../../libs/dal
       '@novu/ee-dal':
         specifier: ^0.24.0
-        version: link:../libs/dal
+        version: link:../../enterprise/packages/libs/dal
       '@novu/shared':
         specifier: ^0.24.0
         version: link:../../../libs/shared
