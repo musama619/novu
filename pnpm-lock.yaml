@@ -1754,6 +1754,9 @@ importers:
       '@novu/dal':
         specifier: workspace:latest
         version: link:../../../libs/dal
+      '@novu/ee-dal':
+        specifier: ^0.24.0
+        version: link:../../enterprise/packages/libs/dal
       '@novu/shared':
         specifier: ^0.24.0
         version: link:../../../libs/shared
