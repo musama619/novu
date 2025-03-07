@@ -43,6 +43,7 @@ import {
   SwitchOrganizationCommand,
 } from '@novu/application-generic';
 import { ApiCommonResponses } from '../shared/framework/response.decorator';
+import { ExternalApiAccessible } from './framework/external-api.decorator';
 
 @ApiCommonResponses()
 @Controller('/auth')
@@ -198,6 +199,7 @@ export class AuthController {
   }
 
   @Get('/subscriber-token/:subscriberId/:environmentId')
+  @ExternalApiAccessible()
   async getSubscriberToken(
     @Param('subscriberId') subscriberId: string,
     @Param('environmentId') environmentId: string
