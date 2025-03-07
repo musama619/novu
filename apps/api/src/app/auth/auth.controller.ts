@@ -200,6 +200,7 @@ export class AuthController {
 
   @Get('/subscriber-token/:subscriberId/:environmentId')
   @ExternalApiAccessible()
+  @UseGuards(UserAuthGuard)
   async getSubscriberToken(
     @Param('subscriberId') subscriberId: string,
     @Param('environmentId') environmentId: string
