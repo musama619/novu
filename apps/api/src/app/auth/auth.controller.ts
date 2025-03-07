@@ -198,9 +198,9 @@ export class AuthController {
     return await this.authService.getSignedToken(user, organizationId, member as MemberEntity, environmentId);
   }
 
-  @Get('/subscriber-token/:subscriberId/:environmentId')
   @ExternalApiAccessible()
   @UseGuards(UserAuthGuard)
+  @Get('/subscriber-token/:subscriberId/:environmentId')
   async getSubscriberToken(
     @Param('subscriberId') subscriberId: string,
     @Param('environmentId') environmentId: string
